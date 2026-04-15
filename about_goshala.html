@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#92fa83",
+                    "on-surface-variant": "#554336",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#a04100",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#1b1d0e",
+                    "on-secondary-fixed": "#002201",
+                    "on-primary-fixed": "#351000",
+                    "on-background": "#1b1d0e",
+                    "outline": "#887364",
+                    "surface-container-low": "#f5f5dc",
+                    "surface-dim": "#dbdcc3",
+                    "on-tertiary-fixed": "#3e0500",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efefd7",
+                    "tertiary-container": "#ff957f",
+                    "inverse-surface": "#303221",
+                    "background": "#fbfbe2",
+                    "primary-fixed": "#ffdbcc",
+                    "surface-variant": "#e4e4cc",
+                    "secondary-fixed-dim": "#77dd6a",
+                    "tertiary-fixed-dim": "#ffb4a5",
+                    "tertiary-fixed": "#ffdad3",
+                    "on-primary-fixed-variant": "#7a3000",
+                    "on-primary-container": "#762e00",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#802918",
+                    "tertiary": "#9f402d",
+                    "primary-fixed-dim": "#ffb693",
+                    "primary-container": "#ff9762",
+                    "surface-container-high": "#eaead1",
+                    "surface": "#fbfbe2",
+                    "on-secondary-container": "#00730d",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e4e4cc",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#dbc2b0",
+                    "inverse-on-surface": "#f2f2d9",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fbfbe2",
+                    "inverse-primary": "#ffb693",
+                    "on-error": "#ffffff",
+                    "primary": "#a04100",
+                    "secondary-container": "#8ff780",
+                    "on-tertiary-container": "#7d2616",
+                    "on-secondary-fixed-variant": "#005307",
+                    "secondary": "#006e0c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-editorial {
+            letter-spacing: -0.02em;
+        }
+        .tonal-layering-1 { background-color: #f5f5dc; }
+        .tonal-layering-2 { background-color: #efefd7; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbfbe2]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-bold text-[#a04100] dark:text-[#ff9933] tracking-tighter">
+                The Sacred Earth
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#1b1d0e] dark:text-[#fbfbe2] font-medium opacity-80 hover:scale-105 hover:text-[#a04100] transition-all duration-300 font-serif text-lg tracking-tight" href="index.html">Home</a>
+<a class="text-[#a04100] font-bold border-b-2 border-[#a04100] pb-1 hover:scale-105 transition-all duration-300 font-serif text-lg tracking-tight" href="about_goshala.html">About</a>
+<a class="text-[#1b1d0e] dark:text-[#fbfbe2] font-medium opacity-80 hover:scale-105 hover:text-[#a04100] transition-all duration-300 font-serif text-lg tracking-tight" href="our_initiatives.html">Initiatives</a>
+<a class="text-[#1b1d0e] dark:text-[#fbfbe2] font-medium opacity-80 hover:scale-105 hover:text-[#a04100] transition-all duration-300 font-serif text-lg tracking-tight" href="gallery.html">Gallery</a>
+<a class="text-[#1b1d0e] dark:text-[#fbfbe2] font-medium opacity-80 hover:scale-105 hover:text-[#a04100] transition-all duration-300 font-serif text-lg tracking-tight" href="contact_us.html">Contact</a>
+<a class="text-[#1b1d0e] font-medium opacity-80 font-serif text-lg tracking-tight hover:text-[#a04100] hover:scale-105 transition-all duration-300" href="committee_management.html">Committee</a>
+</div>
+ <a href="donation_page.html">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:scale-105 transition-all duration-300">
+                Donate Now
+            </button> </a>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="serene morning view of a traditional indian goshala with warm sunlight filtering through ancient trees and soft mist over green pastures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAydjNwV85ZCCdd8d0lQNMqxpDelPqt0UsHAeOfded0HSindTEpNnmfWx8chTTroeT4oashNzgzgqddOmiR1xcNn2dpz143eVm0_5UXd93IxhtpDgP20unFSfcGAtfbt0fvvNGV5IdIEBfEdpjK7Ny0quenBXBiBHL_KCV3_moO_S2uxmvWZZXz2iMmunWhuDd8Eg8hKuESl7yvz6YXsWTjjnLE2lFpbHExzvEnuAGc7WgIkibfujpOw4YI67es4F67MdsswKsKYrk"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Our Heritage</span>
+<h1 class="text-6xl md:text-7xl font-serif text-editorial text-on-surface leading-tight mb-6">
+                        Sanctuary for the <br/><i class="font-normal italic">Sacred Soul.</i>
+</h1>
+<p class="text-xl text-on-surface-variant font-light leading-relaxed max-w-lg">
+                        More than a shelter, The Sacred Earth Goshala is a living testament to India's timeless bond with the bovine spirit.
+                    </p>
+</div>
+</div>
+</section>
+<!-- History & Purpose: Editorial Asymmetric Layout -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[3/4] rounded-lg overflow-hidden relative z-10">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a majestic white indian cow with gentle eyes, adorned with a traditional marigold garland in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ8n9NIiz5_Hg8sOVFUhptS4cqafszq5g22fnNbxeaKObzdjMAPYvmMq5aa1OF0ElUnG-y9sNaFTiSFnGv5gLT2753pjCvY97mOTeC24AxirHKqxilE-cx7k92JxhWr3dAxwHC_HTvNCyqWwDu2OvJsKRd7XQctYULhsAGjoKAkbJshYMCgBCoySXVuLGVo7QYSaHoSHIqCH1-PANSa6ePhYe1ua8tvws0gEt4si5mFtqkD87ZbyZi8WrvkLDIX_wbyG4s4HLSGps"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-surface-container-low -z-0 rounded-lg"></div>
+</div>
+<div class="md:col-span-7">
+<h2 class="text-4xl font-serif text-on-surface mb-8 text-editorial">History and Purpose</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>Founded on the ancestral grounds of the Krishna Valley, our Goshala began as a humble commitment to preserve the native breeds that have sustained Indian civilization for millennia.</p>
+<p>What started with three rescued Desi cows has blossomed into a sanctuary housing over four hundred beings. Our purpose transcends mere protection; we aim to restore the ecological and spiritual equilibrium of the land through the revival of Vedic agriculture and cow-centric living.</p>
+<div class="pt-8 border-t border-outline-variant/30 flex gap-12">
+<div>
+<span class="block text-3xl font-serif text-primary">1982</span>
+<span class="text-xs uppercase tracking-widest font-bold">Foundation</span>
+</div>
+<div>
+<span class="block text-3xl font-serif text-primary">400+</span>
+<span class="text-xs uppercase tracking-widest font-bold">Lives Saved</span>
+</div>
+<div>
+<span class="block text-3xl font-serif text-primary">12</span>
+<span class="text-xs uppercase tracking-widest font-bold">Native Breeds</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-serif text-on-surface mb-4">Our Triad of Harmony</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">The sacred geometry of our existence revolves around three pillars of service.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Cow Care Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:scale-[1.02] transition-transform duration-500 flex flex-col justify-between h-full">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+</div>
+<h3 class="text-2xl font-serif mb-4">Ethical Care</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Every resident is treated as a family member. We practice 'Ahimsa' milking and provide lifetime shelter to non-milking cows and bulls, ensuring dignity in every stage of life.</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Personalized Nutrition
+                            </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Herbal Medical Care
+                            </li>
+</ul>
+</div>
+<!-- Sustainability Card -->
+<div class="bg-surface-container-highest p-10 rounded-xl hover:scale-[1.02] transition-transform duration-500 flex flex-col justify-between h-full">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="eco">eco</span>
+</div>
+<h3 class="text-2xl font-serif mb-4">Sustainability</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Our ecosystem is a closed loop. We convert cow waste into organic fertilizers (Panchagavya) and clean energy, enriching the soil and reducing our carbon footprint.</p>
+</div>
+<div class="mt-4">
+<img class="w-full h-32 object-cover rounded-lg" data-alt="lush green organic vegetable garden with rich dark soil and vibrant sprouts under soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKJ7kBqkkz-P6Q64Fg5M4I3JQG0YJqJt03RTNLJqIPF9tkr2OUOfE1KsMMQf6foziP27P7XmaRWgzEsq8znLqJb3slW-lDolmXzhXJw_JGxIeUIoU-9jQeoJEt5Wa5uSspVedFFmQGK_uRTtQNp7-VSHGorQXMgN8c9ylM1-7sa4IK49cmNrxAH0fJV5rFv56U19Z8U6NuxqK8rM0PCXQUhqFf6HQYvmkvSQb8XbMtGlDt6URO9bNBdKVWMCtCCoRmdnA6OmlwhmA"/>
+</div>
+</div>
+<!-- Spirituality Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl hover:scale-[1.02] transition-transform duration-500 flex flex-col justify-between h-full">
+<div>
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-tertiary" data-icon="self_improvement">self_improvement</span>
+</div>
+<h3 class="text-2xl font-serif mb-4">Spirituality</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">The Goshala is a space for meditation and connection. We host satsangs and workshops that explore the spiritual significance of 'Go-Seva' in the modern world.</p>
+</div>
+<button class="mt-6 text-primary font-bold flex items-center gap-2 group">
+                            Learn the Rituals
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-32 bg-surface text-center">
+<div class="max-w-4xl mx-auto px-8">
+<span class="material-symbols-outlined text-5xl text-outline-variant mb-8 opacity-40" data-icon="format_quote">format_quote</span>
+<blockquote class="text-3xl md:text-4xl font-serif italic text-on-surface leading-snug mb-8">
+                    "The greatness of a nation and its moral progress can be judged by the way its animals are treated."
+                </blockquote>
+<cite class="text-sm font-bold uppercase tracking-[0.3em] text-on-surface-variant not-italic">— Mahatma Gandhi</cite>
+</div>
+</section>
+<!-- Storytelling Section with Overlapping Elements -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1">
+<h2 class="text-4xl font-serif mb-6">A Day in the Sanctuary</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">The rhythm of life at The Sacred Earth begins before dawn with the soft chanting of Vedic mantras. Our caretakers, many of whom have been with us for generations, know each cow by name and temperament. From the morning grazing in open meadows to the evening 'Aarti', every moment is an act of devotion.</p>
+<div class="inline-flex items-center gap-4 p-4 bg-surface-container rounded-lg">
+<div class="flex -space-x-4">
+<img class="w-12 h-12 rounded-full border-2 border-surface object-cover" data-alt="portrait of a smiling indian man with gentle eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJmXBZD7Q03QZ9RCfBFg3uouGemIMXJq1mRneZ7ERnB8LiOn7MQZV96D41w6ctVQT36kDL4Ijfvq1wVZTKD7DmITrwx_n1_Mi-3hLg0m0H_6vhcnt3rNtbR9bNuJ9rDhi-5-JwVGL5VJvnW3wzAdZpONT0QdsnzSrKituYYwfijojNhmwr8oHb7FwyMUlgv8ociLsUvOJThtuaH_n7Ox_E9vxauPQriBwAjHWaTxjaHJG5DVmCR9KBVmsQSF_i669E8FgHKt93fEc"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface object-cover" data-alt="portrait of a woman in traditional indian attire smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqKqhxt2RQsdn93dUiL6yqGZ74r-24WP8juGVAHssobODo035BRAKrY8Y6UuXl-KPOODhLHz8lWNXvYScptJ7Dlq67WhmHuJdGo3zLvbFdtSt1EZ3fyinapmVV2T0C0kKzueBd35REYvbq2LPlCyeIsHxrt_lpvQmmV1RE0DqK6NP5I5TOf9my_efQhMAGcBIEalbNfID0ME7OaIeCIURc_NIzEceTp8w7qUnExAOpfTywtsnTo8k-vLDUBw99TFaMfkzzyODV-LU"/>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-primary flex items-center justify-center text-xs text-on-primary font-bold">+24</div>
+</div>
+<p class="text-sm font-medium">Join our volunteer community</p>
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl transform rotate-3">
+<img class="w-full h-full object-cover" data-alt="wide shot of a herd of cows grazing in a golden sunlit field with rolling hills in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5fgc93M_jwZ1xAIngJ1eRXdFm9__mcaJ6whX_PTE9x5hfLm-Xv54aB7U66yOM9GtedQGK_9yl8CqwsLZtc8RvaaBcfxHsmEp2WIBue3jiHG0Vtt6KamRpcWoVBEujB6YtVX-KTvbJy-bAg4L7ER1i0TUHZ4u6Tt8OmINWeKCXB2trzXCb3rrJ01UOYSggYNztmWZV392OKpgV87gQCS_maEycFQCpJyUsw-dlnp2-vEjxNb8lsD3Pj0UUPzXn-rD-RPUcDpt6nSw"/>
+</div>
+<div class="absolute -top-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fbfbe2] dark:bg-stone-950 w-full border-t border-[#dbc2b0]/15">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-4">
+<div class="text-xl font-serif text-[#a04100]">The Sacred Earth</div>
+<p class="font-serif text-sm tracking-wide text-on-surface max-w-xs opacity-70">Preserving India's spiritual and biological heritage through the compassionate care of Desi cows.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-serif text-sm tracking-wide label-sm uppercase">
+<a class="text-[#1b1d0e] dark:text-stone-400 hover:text-[#006e0c] transition-colors" href="#">Management</a>
+<a class="text-[#1b1d0e] dark:text-stone-400 hover:text-[#006e0c] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#1b1d0e] dark:text-stone-400 hover:text-[#006e0c] transition-colors" href="#">Sustainability Report</a>
+<a class="text-[#1b1d0e] dark:text-stone-400 hover:text-[#006e0c] transition-colors" href="#">Volunteer</a>
+</div>
+<div class="text-center md:text-right">
+<p class="font-serif text-sm tracking-wide text-[#1b1d0e] dark:text-stone-400 opacity-60">
+                    © 2024 The Sacred Earth Editorial. Preserving Heritage, One Soul at a Time.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
